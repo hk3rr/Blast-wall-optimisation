@@ -49,7 +49,11 @@ for m in range(200,mstep+1200,mstep):
         kays.append(k)
         exes.append(xm)
         
-# Hard part's over, now to get opimal values and graph
+# Values in lines 34-35 may be made smaller or larger to change accuracy and computing time
+# Lines 40 to 46 perform the bisecting algorithm to find the optimal x (distance)
+        
+# Hard part's over, now to get optimal values and graph
+
 index = Ctotal.index(min(Ctotal))
 m = emms[index]
 k = kays[index]
