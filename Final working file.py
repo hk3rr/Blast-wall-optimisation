@@ -24,6 +24,8 @@ def func(k,m,t,x):
         return (( Fpeak / ( k * w * td)) * ( math.sin( w * t ) - math.sin( w * ( t - td )))) - (( Fpeak / k ) * math.cos( w * t ))    
 vfunc = np.vectorize(func)
 
+# Above, "func" function is based on a piecewise function found in the brief
+
 Ctotal = []
 emms = []
 kays = []
